@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Surya Banquet Hall</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            position: relative;
+            background: transparent;
+            top: 0;
+            padding: 20px 0;
+        }
+
+        .logo-pill,
+        .nav-pill {
+            box-shadow: none;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-split">
+            <!-- Left Pill: Logo -->
+            <div class="logo-pill">
+                <a href="index.html" class="logo">Surya Banquet Hall</a>
+            </div>
+
+            <!-- Right Pill: Nav + Contact + Login -->
+            <div class="nav-pill">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" style="color: #e3ad73;">Gallery</a>
+                <a href="booking.html">Book Now</a>
+                <span class="phone-item"><i class="phone-icon">📞</i> +91 9973238585</span>
+                <a href="admin.html" class="btn-login-outline">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery section-padding">
+        <div class="container">
+            <h2 class="gallery-title text-center">OUR VISUAL STORY</h2>
+            <p class="gallery-subtitle text-center">
+                हमारे Campus का Virtual Tour करें। भव्य Architecture से लेकर सूक्ष्म सजावट तक, हमने इसका Essence hold
+                लिया है
+                <span style="font-weight: 700;">Surya Banquet Hall</span>.
+            </p>
+
+            <!-- Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('exterior')">Exterior </button>
+                <button class="filter-btn" onclick="filterGallery('decor')">Decor</button>
+                <button class="filter-btn" onclick="filterGallery('dining')">Dining</button>
+                <button class="filter-btn" onclick="filterGallery('lounge')">Lounge</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Exterior -->
+                <div class="gallery-item category-exterior">
+                    <img src="https://lh3.googleusercontent.com/d/1iyYoMeoiwu13yVuP9x_64NbPyc76vole"
+                        alt="Exterior View 1">
+                </div>
+                <div class="gallery-item category-exterior">
+                    <img src="https://lh3.googleusercontent.com/d/1ROfO5SKAxAjjwCmfwgrWDswXfgDrNToA"
+                        alt="Exterior View 2">
+                </div>
+                <div class="gallery-item category-exterior">
+                    <img src="https://lh3.googleusercontent.com/d/1vaEWJWiJHNAyhVlE-1e_DK4PPpYT5dZn"
+                        alt="Exterior View 3">
+                </div>
+                <div class="gallery-item category-exterior">
+                    <img src="https://lh3.googleusercontent.com/d/10L2FHi5tRhiYoOFLvZYik6G_Ul1-HZnH"
+                        alt="Exterior View 4">
+                </div>
+                <div class="gallery-item category-exterior">
+                    <img src="https://lh3.googleusercontent.com/d/15RNqxcMAY85nhoF4t7_IsCz85wK1N3iP"
+                        alt="Exterior View 5">
+                </div>
+
+                <!-- Decor -->
+                <div class="gallery-item category-decor">
+                    <img src="https://lh3.googleusercontent.com/d/1mZ97KEJp5a8PFbrpmSsS9tBrK9aYEI6u" alt="Decor View 1">
+                </div>
+                <div class="gallery-item category-decor">
+                    <img src="https://lh3.googleusercontent.com/d/1iFnqOYNUnjDhFwXusLjafVfSs8A67cHV" alt="Decor View 2">
+                </div>
+                <div class="gallery-item category-decor">
+                    <img src="https://lh3.googleusercontent.com/d/1Kplh8J9nP-C4nDRut7RzX1VAPleU5uxx" alt="Decor View 3">
+                </div>
+                <div class="gallery-item category-decor">
+                    <img src="https://lh3.googleusercontent.com/d/16MrEbZc6uTRZM_gGQlW-YTiNSvnWhq9t" alt="Decor View 4">
+                </div>
+
+                <!-- Dining -->
+                <div class="gallery-item category-dining">
+                    <img src="https://lh3.googleusercontent.com/d/1vqyGKmBNSCbYdEKvSsYdK7T-Kyxt2T4G"
+                        alt="Dining View 1">
+                </div>
+                <div class="gallery-item category-dining">
+                    <img src="https://lh3.googleusercontent.com/d/1n_9UzrJnc80rYwswxgGN4bM7JbYM9gRv"
+                        alt="Dining View 2">
+                </div>
+
+                <!-- Lounge -->
+                <div class="gallery-item category-lounge">
+                    <img src="https://lh3.googleusercontent.com/d/1geIemQusJ0Q6TMYbBOYaq_M95miHx9Kd"
+                        alt="Lounge View 1">
+                </div>
+                <div class="gallery-item category-lounge">
+                    <img src="https://lh3.googleusercontent.com/d/1wH7GE012j7etmNMDxx3g6VYVop6JOVr6"
+                        alt="Lounge View 2">
+                </div>
+                <div class="gallery-item category-lounge">
+                    <img src="https://lh3.googleusercontent.com/d/1mZ97KEJp5a8PFbrpmSsS9tBrK9aYEI6u"
+                        alt="Lounge View 3">
+                </div>
+                <div class="gallery-item category-lounge">
+                    <img src="https://lh3.googleusercontent.com/d/1I6iQMLTpGKQLTclIt32vngQtY8NdWC6o"
+                        alt="Lounge View 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <h3 class="footer-logo">Surya Banquet Hall</h3>
+                    <p>विलासिता, परंपरा और Extraordinary सेवा के साथ Unforgettable यादें बनाना।</p>
+                </div>
+
+                <!-- Column 2: Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="admin.html">Admin Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 New Dillian, Dehri, Bihar 821307</p>
+                    <p>📞 +91 9973238585</p>
+                    <p>✉️ Suryabanquethall@gmail.com</p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://www.instagram.com/" target="_blank"
+                            style="color: #ccc; text-decoration: none; display: flex; align-items: center; gap: 5px;">
+                            <span style="font-size: 1.2rem;">📸</span> Follow on Instagram
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Surya Banquet Hall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
